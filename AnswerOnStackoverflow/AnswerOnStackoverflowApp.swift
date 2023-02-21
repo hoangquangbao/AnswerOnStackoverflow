@@ -11,7 +11,7 @@ import SwiftUI
 struct AnswerOnStackoverflowApp: App {
     var body: some Scene {
         WindowGroup {
-            DismissKeyboard()
+            View1()
         }
     }
 }
