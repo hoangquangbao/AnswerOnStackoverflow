@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 @main
 struct AnswerOnStackoverflowApp: App {
     var body: some Scene {
         WindowGroup {
-            View1()
+            MyWidgetEntryView()
         }
     }
 }
