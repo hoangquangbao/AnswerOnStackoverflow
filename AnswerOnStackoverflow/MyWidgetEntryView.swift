@@ -12,18 +12,25 @@ import WidgetKit
 
 struct MyWidgetEntryView : View {
 
+    //Option1
     static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "h:mm"
         return formatter
     }()
 
+    //Option2
+    let hoursMinutes = Date().formatted(date: .omitted, time: .shortened)
+    
     var body: some View {
         VStack {
+            //Option1
             Text(Self.dateFormatter.string(from: Date()))
-                .font(.largeTitle)
+            //Option2
+            Text("\(hoursMinutes)")
             Spacer()
         }
+        .font(.largeTitle)
     }
 }
 
